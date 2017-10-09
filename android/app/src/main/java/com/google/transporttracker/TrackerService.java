@@ -347,7 +347,7 @@ public class TrackerService extends Service implements LocationListener {
                 new Intent(this, TrackerActivity.class), PendingIntent.FLAG_UPDATE_CURRENT);
         mNotificationBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.bus_white)
-                .setColor(getColor(R.color.colorPrimary))
+                .setColor(0x2196F3)
                 .setContentTitle(getString(R.string.app_name))
                 .setOngoing(true)
                 .setContentIntent(resultPendingIntent);

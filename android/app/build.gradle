@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.google.transporttracker"
-        minSdkVersion 23
-        targetSdkVersion 23
+        minSdkVersion 22
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         resValue "string", "build_transport_id", (project.findProperty("build_transport_id") ?: "")
@@ -23,7 +23,7 @@ android {
 }
 
 ext {
-    support = '23.2.0'
+    support = '22.2.1'
     playServices = '10.2.4'
 }
 

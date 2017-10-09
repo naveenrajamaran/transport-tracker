@@ -230,11 +230,11 @@ public class TrackerActivity extends AppCompatActivity {
         // Before we start the service, confirm that we have extra power usage privileges.
         PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
         Intent intent = new Intent();
-        if (!pm.isIgnoringBatteryOptimizations(getPackageName())) {
-            intent.setAction(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
-            intent.setData(Uri.parse("package:" + getPackageName()));
-            startActivity(intent);
-        }
+//        if (!pm.isIgnoringBatteryOptimizations(getPackageName())) {
+//            intent.setAction(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
+//            intent.setData(Uri.parse("package:" + getPackageName()));
+//            startActivity(intent);
+//        }
         startService(new Intent(this, TrackerService.class));
     }
 
